@@ -50,7 +50,7 @@ function Vendeur() {
           return;
       }
   
-      await axios.delete(`http://localhost:8000/api/modifierstatutvendeur/${id}`).then(({data})=>{
+      await axios.delete(`http://localhost:8000/api/supprimervendeur/${id}`).then(({data})=>{
           Swal.fire({
               icon:"success",
               text:data.message
